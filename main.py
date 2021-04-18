@@ -19,5 +19,5 @@ except urllib.error.URLError:
     print("Page not found")
     sys.exit(1)
 
-print("test")
+print("test 1")
 
