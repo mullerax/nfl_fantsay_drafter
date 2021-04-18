@@ -9,7 +9,7 @@ import urllib.request
 import urllib.error
 import sys
 """Get data from website"""
-url = "https://www.pro-football-reference.com/years/"
+url = "https://www.pro-football-refernce.com/years/"
 year = 2020
 
 """Check if website is available"""
@@ -19,5 +19,4 @@ except urllib.error.URLError:
     print("Page not found")
     sys.exit(1)
 
-print("test 2")
 
