@@ -9,7 +9,7 @@ import urllib.request
 import urllib.error
 import sys
 """Get data from website"""
-url = "https://www.pro-football-refernce.com/years/"
+url = "https://www.pro-football-reference.com/years/"
 year = 2020
 
 """Check if website is available"""
