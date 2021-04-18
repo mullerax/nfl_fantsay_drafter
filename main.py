@@ -18,5 +18,3 @@ try:
 except urllib.error.URLError:
     print("Page not found")
     sys.exit(1)
-
-
