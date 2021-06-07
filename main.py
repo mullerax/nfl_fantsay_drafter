@@ -8,9 +8,12 @@
 import urllib.request
 import urllib.error
 import sys
+import scrap_player_data
+import pandas as pandas
 """Get data from website"""
 url = "https://www.pro-football-reference.com/years/"
 year = 2020
+pandas.set_option('display.max_columns', None)
 
 """Check if website is available"""
 try:
@@ -18,3 +21,8 @@ try:
 except urllib.error.URLError:
     print("Page not found")
     sys.exit(1)
+
+data = scrap_player_data.get_player_data(url + str(year) + "/")
+print(data.head())
+
+
